@@ -1,0 +1,41 @@
+# ============================================================
+# config_compact.yaml — Compact variant (fills the page more)
+# ============================================================
+# Use with: python generate.py -c config_compact.yaml
+# ============================================================
+
+page:
+  margin_top_mm: 10
+  margin_bottom_mm: 8
+  margin_left_mm: 12
+  margin_right_mm: 12
+
+colors:
+  accent: "#1a1a1a"
+  text: "#1a1a1a"
+  subtle: "#444444"
+  light: "#777777"
+  divider: "#bbbbbb"
+
+fonts:
+  name_size: 20
+  subtitle_size: 9.5
+  contact_size: 8.5
+  section_title_size: 10
+  role_title_size: 9
+  subheading_size: 8.5
+  body_size: 8.5
+  summary_size: 8.5
+
+spacing:
+  line_height_ratio: 1.32
+  section_gap: 5
+  subsection_gap: 3
+  bullet_indent: 8
+  role_gap: 5
+  after_name: 1
+  after_subtitle: 2
+  after_contacts: 2
+  after_section_title: 2
+  bullet_spacing: 0.5
+

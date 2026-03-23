@@ -1,0 +1,46 @@
+# ============================================================
+# config.yaml — Resume PDF Configuration
+# ============================================================
+# Edit any value here and re-run: python generate.py
+# All sizes are in points (pt) unless noted otherwise.
+# ============================================================
+
+# --- Page Setup ---
+page:
+  margin_top_mm: 11
+  margin_bottom_mm: 9
+  margin_left_mm: 13
+  margin_right_mm: 13
+
+# --- Colors (hex) ---
+colors:
+  accent: "#2d5986"
+  text: "#1a1a1a"
+  subtle: "#555555"
+  light: "#888888"
+  divider: "#cccccc"
+
+# --- Typography ---
+fonts:
+  name_size: 19
+  subtitle_size: 9
+  contact_size: 8.5
+  section_title_size: 9.5
+  role_title_size: 8.5
+  subheading_size: 8
+  body_size: 8
+  summary_size: 8
+
+# --- Spacing (pt) ---
+spacing:
+  line_height_ratio: 1.30    # multiplier on font size for leading
+  section_gap: 5             # space above each section divider
+  subsection_gap: 3          # space above each subsection heading
+  bullet_indent: 8           # left indent for bullet text
+  role_gap: 5                # space between roles (Amazon, Tredence)
+  after_name: 1
+  after_subtitle: 2
+  after_contacts: 2
+  after_section_title: 2
+  bullet_spacing: 0.5        # extra space between bullets
+

@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+reportlab
+pyyaml
+anthropic
+openai
+python-dotenv
