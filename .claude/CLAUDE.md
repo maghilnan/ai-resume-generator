@@ -54,6 +54,24 @@ Each saved resume lives in `output/{folderName}/` with three files: `content.md`
 ### Config YAML Fields
 Controls page margins, font sizes, colors (accent, text), line height, spacing. Two variants: `configs/default.yaml` and `configs/compact.yaml` (tighter layout, different accent color).
 
+## GitHub Remotes
+
+Two separate repos — **never push the wrong branch to the wrong remote.**
+
+| Branch | Remote | GitHub Repo | Visibility |
+|---|---|---|---|
+| `main` | `private` | `maghilnan/ai-resume-generator-private` | Private — contains real personal data |
+| `public` | `public` | `maghilnan/ai-resume-generator` | Public — contains fake placeholder data only |
+
+Upstreams are already configured, so `git push` on either branch goes to the correct remote automatically. To push explicitly:
+
+```bash
+git checkout main   && git push            # → private repo
+git checkout public && git push public HEAD:main  # → public repo
+```
+
+**CRITICAL:** Never push `main` to the public remote. `main` contains real personal portfolio data, contact info, and work history.
+
 ## One-Page Constraint
 
 Both the backend PDF generator and the live preview are deliberately designed to produce single-page resumes. If content overflows:
